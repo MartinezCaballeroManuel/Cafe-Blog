@@ -292,7 +292,15 @@ img {
 
 .campo__field {
     flex: 1;
+    max-width: 12rem;
     border: 1px solid var(--gris);
+}
+
+/* Dispositivo móvil, campos se extienden */
+@media (min-width: 768px) {
+    .campo__field {
+        max-width: none;
+    }
 }
 
 .campo__field--textarea {
